@@ -8,14 +8,14 @@ app = Flask(__name__)
 CORS(app)
 
 # 🔐 Langflow config
-LANGFLOW_URL = "http://localhost:7860/api/v1/run/3d85182c-4a2e-4826-9ae1-fe3337acfbd7"
+LANGFLOW_URL = "http://localhost:7860/api/v1/run/b6e77e04-cb8a-43e0-87ac-711035c0e123"
 # Use the key you provided earlier
-LANGFLOW_API_KEY = os.getenv("LANGFLOW_KEY", "sk-KJ46yimCWb-9waieRK7ZZLRafgAu25x7n1NISeQYbK4")
+LANGFLOW_API_KEY = os.getenv("LANGFLOW_KEY", "sk-KHWD8bCb7A44sKDRPhbtKCMTjubNavhhKFYgd_YWnjM")
 
 # --- 1. ROUTE TO SHOW YOUR WEBSITE ---
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("index2.html")
 
 # --- 2. ROUTE FOR CHAT LOGIC ---
 @app.route("/chat", methods=["POST"])
