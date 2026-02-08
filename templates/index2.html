@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medicham | AI Digital Medical Representative</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">🩺 Medicham</div>
+        <div class="tagline">AI Digital Medical Representative</div>
+    </header>
+
+    <main class="hero">
+        <div class="hero-text">
+            <h1>Your AI Medical Representative</h1>
+            <p>
+                Medicham delivers compliant, accurate, and up-to-date medical information —
+                available 24/7 for healthcare professionals and pharmaceutical teams.
+            </p>
+
+            <div class="features">
+                <div class="feature">✔ Evidence-based responses</div>
+                <div class="feature">✔ Medical & pharma compliant</div>
+                <div class="feature">✔ Instant AI assistance</div>
+            </div>
+            
+            </div>
+
+        <div class="chat-box">
+            <div class="chat-header">
+                <span>Medicham AI</span>
+            </div>
+
+            <div class="chat-body" id="chatBody">
+                <div class="ai-msg">
+                    Hello 👋 I’m Medicham AI. How can I assist you today?
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <input id="userInput" type="text" placeholder="Type your question..." />
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        © 2026 Medicham • AI-powered Medical Intelligence
+    </footer>
+
+    <script src="{{ url_for('static', filename='button2.js') }}"></script>
+</body>
+</html>
