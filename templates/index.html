@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="{{ url_for('static', filename='button.js') }}"></script>
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medicham | AI Digital Medical Representative</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<div id="chatModal" class="chat-modal">
+    <div class="chat-box">
+        <div class="chat-header">
+            <span>Medicham AI</span>
+            <button onclick="closeChat()">✕</button>
+        </div>
+
+        <div class="chat-body">
+            <div class="ai-msg">
+                Hello 👋 I’m Medicham AI. How can I assist you today?
+            </div>
+        </div>
+
+        <div class="chat-input">
+            <input id="userInput" type="text" placeholder="Type your question..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+<body>
+    <header class="navbar">
+        <div class="logo">🩺 Medicham</div>
+        <div class="tagline">AI Digital Medical Representative</div>
+    </header>
+
+    <main class="hero">
+        <div class="hero-text">
+            <h1>Your AI Medical Representative</h1>
+            <p>
+                Medicham delivers compliant, accurate, and up-to-date medical information —
+                available 24/7 for healthcare professionals and pharmaceutical teams.
+            </p>
+
+            <div class="features">
+                <div class="feature">✔ Evidence-based responses</div>
+                <div class="feature">✔ Medical & pharma compliant</div>
+                <div class="feature">✔ Instant AI assistance</div>
+            </div>
+
+            <button class="cta" onclick="openChat()">Talk to Medicham AI</button>
+
+        </div>
+
+        <div class="ai-card">
+            <div class="ai-avatar">AI</div>
+            <div class="ai-info">
+                <h3>Medicham AI</h3>
+                <p>Status: Online</p>
+                <span class="pulse"></span>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        © 2026 Medicham • AI-powered Medical Intelligence
+    </footer>
+</body>
+
+</html>
